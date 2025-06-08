@@ -1,0 +1,20 @@
+saturation_power_range:         # Range for power in x^(1 - s)
+  min: 0.05
+  max: 0.4
+
+decay_range:                    # Carryover decay range per day
+  min: 0.5
+  max: 0.98
+
+roas_range:                     # Used to estimate initial revenue range
+  min: 0.5
+  max: 5.0
+
+revenue_scale_factors:          # Scale factors around historical untracked revenue
+  - 0.8
+  - 0.9
+  - 1.0
+  - 1.1
+  - 1.2
+
+baseline_spend_default: 10000   # Median baseline spend value if not overridden
